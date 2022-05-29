@@ -24,12 +24,9 @@ body {
 
 main {
     position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     background-color: var(--Dark-Grayish-Blue);
     width: 40rem;
-    height: 45rem;
+    /* height: 45rem; */
     border-radius: 2REM;
 }
 
@@ -38,6 +35,7 @@ h1 {
     font-size: 1.4rem;
     font-weight: 500;
     letter-spacing: 0.7rem;
+    text-align: center;
     margin-top: 5.5rem;
     margin-bottom: 3.5rem;
 }
@@ -52,12 +50,16 @@ p {
 }
 
 #mobileSeparator {
-    position: absolute;
-    top: 36rem;
+    margin-top: 2rem;
+    margin-bottom: 8rem;
+    margin-left: calc(50% - 14.9rem);
 }
 
 #desktopSeparator {
     display: none;
+    margin-top: 2rem;
+    margin-bottom: 8rem;
+    margin-left: calc(50% - 14.9rem);
 }
 
 #dice {
@@ -68,7 +70,8 @@ p {
     border-radius: 50%;
     width: 9rem;
     height: 9rem;
-    top: 40.4rem;
+    margin-top: -4.5rem;
+    left: calc(50% - 4.5rem);
 }
 
 #dice img {
@@ -84,7 +87,6 @@ p {
 @media(min-width: 900px) {
     main {
         width: 55rem;
-        height: 35rem;
     }
     #mobileSeparator {
         display: none;
@@ -92,12 +94,12 @@ p {
     
     #desktopSeparator {
         display: block;
-        position: absolute;
-        top: 28rem;
+        margin-left: calc(50% - 22.5rem);
     }
     #dice {
+        margin-top: -3.5rem;
         width: 7rem;
         height: 7rem;
-        top: 31.5rem;
+        left: calc(50% - 3.9rem);
     }
 }
